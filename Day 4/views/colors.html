@@ -1,0 +1,9 @@
+
+<select ng-model="myColor" ng-options="color.text for color in colors" ng-change="changeColor()"></select>
+
+<label ng-class="myColor.class">Culoare</label>
+<br>
+<input type="text" ng-model="input1"> <br>
+<input type="text" ng-model="input2">
+
+<li ng-repeat="(index,color) in colors | filter: input2 | orderBy: input1">{{index}} : {{color.text}} </li>

@@ -1,0 +1,18 @@
+
+<ng-form name="myForm" ng-controller="FormsController" class="my-form">
+    Required Input: <input name="input" ng-model="userType" required>
+
+    <span class="error" ng-show="myForm.input.$error.required">Required!</span><br>
+    Required Input: = {{userType}}<br>
+
+    myForm.input.$valid = {{myForm.input.$valid}}<br>
+    myForm.input.$error = {{myForm.input.$error}}<br>
+    myForm.$valid = {{myForm.$valid}}<br>
+    myForm.$invalid = {{myForm.$invalid}}<br>
+    myForm.$error.required = {{!!myForm.$error.required}}<br>
+    myForm.$pristine = {{myForm.$pristine}} <br>
+    myForm.$dirty = {{myForm.$dirty}} <br>
+    myForm.$submitted = {{myForm.$submitted}}<br>
+
+    <button ng-click="validForm()">Click</button>
+</ng-form>
