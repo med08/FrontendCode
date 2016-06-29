@@ -1,4 +1,4 @@
-hrApp.controller('MenuController', ['$scope', 'employeeActionsService', function($scope, employeeActionsService){
+hrApp.controller('MenuController', ['$scope', 'empxloyeeActionsService', function($scope, employeeActionsService){
     //$scope.employeeActionList = [{
     //    url: '#/employeeslist',
     //    label: 'Employee List'
